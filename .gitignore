@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+.vs/
+TestResults/
+*.user
+*.esp
+*.esm
+*.esl
+.templateengine/
+.packages/
