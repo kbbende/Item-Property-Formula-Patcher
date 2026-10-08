@@ -1,0 +1,10 @@
+<Project>
+  <!-- This application uses no Noggog generator features. The transitive generator
+       otherwise emits a second global AssemblyVersions type that conflicts with
+       Synthesis 0.36.6's generated type. Keep all other compiler analyzers. -->
+  <Target Name="RemoveUnusedNoggogGenerator" BeforeTargets="CoreCompile">
+    <ItemGroup>
+      <Analyzer Remove="@(Analyzer)" Condition="'%(Analyzer.Filename)' == 'Noggog.SourceGenerators'" />
+    </ItemGroup>
+  </Target>
+</Project>

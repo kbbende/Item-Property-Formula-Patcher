@@ -1,0 +1,51 @@
+{
+  "Rules": [
+    {
+      "Enabled": true,
+      "Match": "Category",
+      "Selector": "HeavyArmor",
+      "Target": "Weight",
+      "Formula": "round(max(target * 0.85, 1), 0.1)"
+    },
+    {
+      "Enabled": true,
+      "Match": "Keyword",
+      "Selector": "WeapMaterialDaedric",
+      "Target": "Damage",
+      "Formula": "round(target * 1.1)"
+    },
+    {
+      "Enabled": true,
+      "Match": "Category",
+      "Selector": "Weapon",
+      "Target": "Value",
+      "Formula": "round(max(value, damage * damage * 4), 5)"
+    },
+    {
+      "Enabled": false,
+      "Match": "Category",
+      "Selector": "Armor",
+      "Target": "Armor",
+      "Formula": "target * 1.05"
+    },
+    {
+      "Enabled": false,
+      "Match": "Keyword",
+      "Selector": "VendorItemOreIngot",
+      "Target": "Weight",
+      "Formula": "max(target, 1)"
+    },
+    {
+      "Enabled": false,
+      "Match": "Category",
+      "Selector": "Item",
+      "Target": "Value",
+      "Formula": "round(target * if(isEnchanted, 1.5, 1), 5)"
+    }
+  ],
+  "UnsupportedTargetHandling": "WarnAndSkip",
+  "MaxUnsupportedTargetWarnings": 100,
+  "MaxFormulaWarnings": 100,
+  "LogChangedRecords": true,
+  "MaxLoggedRecords": 200
+}

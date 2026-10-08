@@ -1,0 +1,8 @@
+{
+  "Rules": [],
+  "UnsupportedTargetHandling": "WarnAndSkip",
+  "MaxUnsupportedTargetWarnings": 100,
+  "MaxFormulaWarnings": 100,
+  "LogChangedRecords": false,
+  "MaxLoggedRecords": 200
+}

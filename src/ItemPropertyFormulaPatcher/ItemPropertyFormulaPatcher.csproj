@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Mutagen.Bethesda" Version="[0.54.4]" />
+    <PackageReference Include="Mutagen.Bethesda.Synthesis" Version="[0.36.6]" />
+  </ItemGroup>
+</Project>
