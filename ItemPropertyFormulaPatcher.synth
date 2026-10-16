@@ -1,0 +1,6 @@
+{
+  "AddGitPatcher": {
+    "Url": "https://github.com/kbbende/Item-Property-Formula-Patcher",
+    "SelectedProject": "src\\ItemPropertyFormulaPatcher\\ItemPropertyFormulaPatcher.csproj"
+  }
+}

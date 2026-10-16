@@ -20,6 +20,14 @@ The standalone typical-open output is `ItemPropertyFormulaPatch.esp`; within a S
 
 The shipped defaults have an empty `Rules` list and make no changes. `examples/settings.demo.json` deliberately enables three demonstration rules: lighter heavy armor, higher Daedric weapon damage, then weapon prices based on the resulting damage. Other examples are disabled. Missing material keywords warn and skip their rules.
 
+## Nexus installer and published example preset
+
+Download [ItemPropertyFormulaPatcher.synth](ItemPropertyFormulaPatcher.synth), open Synthesis, select the intended Skyrim Special Edition profile and patcher group, then double-click the downloaded file. It points to this repository and selects `src/ItemPropertyFormulaPatcher/ItemPropertyFormulaPatcher.csproj`. This follows the [official Synthesis installer format](https://mutagen-modding.github.io/Synthesis/Synth-File/).
+
+The installer adds the patcher; it does not run it or apply example settings. Defaults remain neutral. The Nexus distribution instructions are in [distribution/README.txt](distribution/README.txt).
+
+[examples/settings.v3.example.json](examples/settings.v3.example.json) adapts the previous published price preset into v3's ordered formulas. It includes all 14 category entries and 20 keyword entries, followed by ten disabled weight/damage/armor templates. The unsupported Scroll and SoulGem keyword rules are retained but disabled. Read the [preset notes](examples/settings.v3.example-notes.md) for stacking examples and limitations before replacing your settings.
+
 ## Rules
 
 ```json
